@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    font-family: 'Itim', cursive;
+}
+
+body {
+    background-color: rgb(219, 172, 172);
+    position: relative;
+}
+
+#navBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(177, 239, 177);
+}
+
+#logo {
+    height: 80px;
+    margin-left: 2%;
+}
+
+#navigationsDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 2em;
+}
+
+.navigations {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 28px;
+    border-radius: 8px;
+}
+
+#categories:hover, #cuisine:hover {
+    color: rgb(36, 156, 128);
+    cursor: pointer;
+}
+
+#home {
+    background-color: rgb(107, 238, 238);
+    border: 2px black solid;
+}
+
+#home:hover {
+    cursor:default;
+}
+
+#contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#brief {
+    text-align: center;
+    color:black;
+    font-size: 20px;
+    margin-left:20%;
+    margin-right: 20%;
+    margin-top: 20px;
+    font-style: italic;
+}
+
+#searchDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#searchBox {
+    margin: 40px 0px 40px 0px;
+    height: 40px;
+    width: 50fr;
+    border-radius: 8px 0px 0px 8px;
+    border: 3px solid rgb(0, 0, 0);
+    background-color: greenyellow;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+#searchButton {
+    background-color: rgb(0, 0, 0);
+    color: rgb(231, 231, 136);
+    font-size: 18px;
+    font-weight: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 8px 8px 0px;
+    height: 42px;
+    width: 60px;
+    border: black solid 3px;
+}
+
+#searchButton:hover {
+    cursor: pointer;
+    color: rgb(166, 62, 190);
+}
+
+.title {
+    font-size: 32px;
+    color: red;
+}
+
+.dataDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 320px;
+    max-height: fit-content;
+    width: 270px;
+    background-color: rgb(191, 240, 135);
+    border-radius: 20px;
+    box-shadow: -6px 5px 10px  rgb(0, 0, 0);
+}
+
+#ingredientBox {
+    position: fixed;
+    border-radius: 45px;
+    top: 2.5%;
+    left: 34.5%;
+    height: 700px;
+    width: 500px;
+    background-color: rgb(151, 193, 52);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#ingredients {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(3, 3, 3);
+    text-align: left;
+}
+
+.list {
+    margin-top: 4px;
+}
+
+.dataDiv:hover {
+    cursor: pointer;
+}
+
+#randomDiv {
+    margin-top: 20px;
+}
+
+#searchResultDiv {
+    margin: 20px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+#afterSearch {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mealImg {
+    height: 240px;
+    width: 240px;
+    padding: 4px;
+    border:solid rgb(104, 79, 206) 2px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.mealName {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+@media (max-width: 400px) {
+    #ingredientBox {
+        position: fixed;
+        border-radius: 8px;
+        top: 8%;
+        left: -12%;
+        height: 700px;
+        width: 500px;
+        background-color: black;
+        opacity: 0.9;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    #brief {
+        text-align: center;
+        color:black;
+        font-size: 20px;
+        margin-left:4%;
+        margin-right: 4%;
+        margin-top: 10px;
+    }
+}
